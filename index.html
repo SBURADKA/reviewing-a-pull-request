@@ -258,7 +258,7 @@
     function setBlock(x,y,type)     { blocks[x] = blocks[x] || []; blocks[x][y] = type; invalidate(); }
     function clearBlocks()          { blocks = []; invalidate(); }
     function clearActions()         { actions = []; }
-    function setCurrentPiece(piece) { current = piece || randomPiece(); invalidate();     }
+    function setCurrentPiece(piece) { current = piece || randomPiece(); invalidate();    }
     function setNextPiece(piece)    { next    = piece || randomPiece(); invalidateNext(); }
 
     function reset() {
